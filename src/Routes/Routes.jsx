@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import School from "../Pages/School/School";
 import College from "../Pages/College/College";
 import University from "../Pages/University/University";
+import Competition from "../Pages/Competition/Competition";
 
   export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ import University from "../Pages/University/University";
         {
           path:"university",
           element: <University></University>
+        },
+        {
+          path:"competitions",
+          element: <Competition></Competition>
         }
       ]
     },

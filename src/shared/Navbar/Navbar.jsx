@@ -18,7 +18,7 @@ const Navbar = () => {
                   <li><Link to="/university">university</Link></li>
                 </ul>
               </li>
-              <li><a>Item 3</a></li>
+              <li><Link to="/competitions">competitions</Link></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl"> <img className="h-full" src={logo} alt="" /> </a>
@@ -36,7 +36,8 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><Link to="/competitions">competitions</Link></li>
+
           </ul>
         </div>
         <div className="navbar-end">
