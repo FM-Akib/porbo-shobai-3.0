@@ -6,10 +6,13 @@ import u2 from '../../assets/BUET.png';
 import u3 from '../../assets/CU.png';
 import u4 from '../../assets/IIUC.png';
 import map from '../../assets/map.png';
+import { Helmet } from 'react-helmet';
 const University = () => {
     return (
         <div>
-               
+          <Helmet>
+        <title>Porbo Shobai | Universities</title>
+        </Helmet>     
     <div className="universityhead">
       <img src={universityHead} alt="university Header" />
     </div>

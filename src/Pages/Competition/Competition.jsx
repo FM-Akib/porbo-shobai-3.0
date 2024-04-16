@@ -5,10 +5,14 @@ import e2 from '../../assets/lab.jpeg';
 import e3 from '../../assets/muslimh.jpeg';
 import e4 from '../../assets/olym.png';
 import e5 from '../../assets/ihs.png';
+import { Helmet } from 'react-helmet';
 
 const Competition = () => {
     return (
         <div>
+        <Helmet>
+        <title>Porbo Shobai | Competition</title>
+        </Helmet>
           
 <div className="Eventhead">
     <img src={eventhead} alt="Competition"/>

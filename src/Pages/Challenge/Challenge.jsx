@@ -1,7 +1,15 @@
 import './styles.css';
 import aiHead from '../../assets/aihead.png';
+import { Helmet } from 'react-helmet';
 const Challenge = () => {
     return (
+
+<>
+        <Helmet>
+        <title>Porbo Shobai | Challenge</title>
+        </Helmet>
+
+
         <body>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -33,7 +41,7 @@ const Challenge = () => {
         </div>
         </div>
         
-            </body>
+            </body></>
     );
 };
 

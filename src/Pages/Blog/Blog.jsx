@@ -5,6 +5,7 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 import Chip from '../../components/Chip/Chip';
 import EmptyList from '../../components/EmptyList/EmptyList';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -20,6 +21,10 @@ const Blog = () => {
     }, []);
     return (
         <>
+        <Helmet>
+        <title>Porbo Shobai | Blog</title>
+        </Helmet>
+
         <Link className='blog-goBack' to='/blog'>
         <span> &#8592;</span> <span>Go Back</span>
       </Link>

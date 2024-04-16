@@ -6,10 +6,14 @@ import c2 from '../../assets/adamjee_cantonment_college.png';
 import c3 from '../../assets/rajshahi_college.png';
 import c4 from '../../assets/notre_dame_college.png';
 import cmap from '../../assets/map.png';
+import { Helmet } from 'react-helmet';
 
 const College = () => {
     return (
         <div>
+        <Helmet>
+        <title>Porbo Shobai | college</title>
+        </Helmet>
             <div className="collegehead">
       <img src={collegeHead} alt="college Header" />
     </div>

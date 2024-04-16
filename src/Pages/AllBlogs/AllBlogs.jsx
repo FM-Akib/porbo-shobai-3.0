@@ -4,6 +4,7 @@ import SearchBar from './SearchBar';
 import EmptyList from '../../components/EmptyList/EmptyList';
 import BlogList from './BlogList';
 import './styles.css';
+import { Helmet } from 'react-helmet';
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState('');
@@ -30,7 +31,9 @@ const AllBlogs = () => {
   };
     return (
         <div>
-      
+              <Helmet>
+        <title>Porbo Shobai | Blogs</title>
+        </Helmet>
       
 
       {/* Search Bar */}

@@ -5,10 +5,15 @@ import l3 from '../../assets/img-3.png';
 import l4 from '../../assets/img-4.png';
 import l5 from '../../assets/img-5.png';
 import l6 from '../../assets/img-6.png';
+import { Helmet } from 'react-helmet';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
 
 const Leaderboard = () => {
     return (
+<>
+        <Helmet>
+        <title>Porbo Shobai | Leaderboard</title>
+        </Helmet>
         <body className="fullbody">
     <main className='leadermain'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="  />
@@ -190,7 +195,7 @@ const Leaderboard = () => {
         </section>
 
     </main>
-    </body>
+    </body></>
     );
 };
 

@@ -6,12 +6,18 @@ import s2 from '../../assets/vn.png';
 import s3 from '../../assets/rajuk_school.png';
 import s4 from '../../assets/dr_school.png';
 import map from '../../assets/map.png';
+import { Helmet } from 'react-helmet';
 
 
 const School = () => {
     return (
         <div>
-             <div className="Schoolhead">
+    
+        <Helmet>
+        <title>Porbo Shobai | Schools</title>
+        </Helmet>
+    
+    <div className="Schoolhead">
       <img src={SchoolHead} alt="School Header" />
     </div>
 

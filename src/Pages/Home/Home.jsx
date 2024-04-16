@@ -18,11 +18,18 @@ import b1 from '../../assets/blog-1.png'
 import b2 from '../../assets/blog-2.png'
 import b3 from '../../assets/blog-3.png'
 import b4 from '../../assets/blog-4.png'
+import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
     return (
         <div>
+        <Helmet>
+        <title>Porbo Shobai | Home</title>
+        </Helmet>
+
+
+      {/* <h1>Hello World</h1> */}
            <div>
         <div className="mainhead">
     <img src={mainhead} alt="head"/>
