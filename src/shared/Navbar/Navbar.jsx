@@ -11,10 +11,11 @@ const Navbar = () => {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link to="/">Home</Link></li>
               <li>
-                <a>Parent</a>
+                <a>Information</a>
                 <ul className="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                  <li><Link to="/school">school</Link></li>
+                  <li><Link to="/college">college</Link></li>
+                  <li><Link to="/university">university</Link></li>
                 </ul>
               </li>
               <li><a>Item 3</a></li>
@@ -27,10 +28,11 @@ const Navbar = () => {
           <li><Link to="/">Home</Link></li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Information</summary>
                 <ul className="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                <li><Link to="/school">school</Link></li>
+                  <li><Link to="/college">college</Link></li>
+                  <li><Link to="/university">university</Link></li>
                 </ul>
               </details>
             </li>
