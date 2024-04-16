@@ -19,6 +19,9 @@ const Navbar = () => {
                 </ul>
               </li>
               <li><Link to="/competitions">competitions</Link></li>
+            <li><Link to="/leaderboard">leaderboard</Link></li>
+            <li><Link to="/challenge">challenge</Link></li>
+
             </ul>
           </div>
           <a className="btn btn-ghost text-xl"> <img className="h-full" src={logo} alt="" /> </a>
@@ -37,7 +40,9 @@ const Navbar = () => {
               </details>
             </li>
             <li><Link to="/competitions">competitions</Link></li>
-
+            <li><Link to="/leaderboard">leaderboard</Link></li>
+            <li><Link to="/challenge">challenge</Link></li>
+            
           </ul>
         </div>
         <div className="navbar-end">

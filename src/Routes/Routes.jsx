@@ -7,6 +7,8 @@ import School from "../Pages/School/School";
 import College from "../Pages/College/College";
 import University from "../Pages/University/University";
 import Competition from "../Pages/Competition/Competition";
+import Leaderboard from "../Pages/Leaderboard/Leaderboard";
+import Challenge from "../Pages/Challenge/Challenge";
 
   export const router = createBrowserRouter([
     {
@@ -32,6 +34,14 @@ import Competition from "../Pages/Competition/Competition";
         {
           path:"competitions",
           element: <Competition></Competition>
+        },
+        {
+          path:"leaderboard",
+          element: <Leaderboard></Leaderboard>
+        },
+        {
+          path:"challenge",
+          element: <Challenge></Challenge>
         }
       ]
     },
