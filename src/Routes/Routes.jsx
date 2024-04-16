@@ -12,6 +12,8 @@ import Challenge from "../Pages/Challenge/Challenge";
 // import Blog from "../Pages/Blog/Blog";
 import AllBlogs from "../Pages/AllBlogs/AllBlogs";
 import Blog from "../Pages/Blog/Blog";
+import Login from "../Pages/Login/Login";
+import Signup from "../Pages/Signup/Signup";
 
   export const router = createBrowserRouter([
     {
@@ -53,6 +55,14 @@ import Blog from "../Pages/Blog/Blog";
         {
           path:"blog/:id",
           element: <Blog></Blog>
+        },
+        {
+          path:"login",
+          element: <Login></Login>
+        },
+        {
+          path:"signup",
+          element: <Signup></Signup>
         }
       ]
     },
