@@ -21,6 +21,7 @@ const Navbar = () => {
               <li><Link to="/competitions">competitions</Link></li>
             <li><Link to="/leaderboard">leaderboard</Link></li>
             <li><Link to="/challenge">challenge</Link></li>
+            <li><Link to="/blog">blog</Link></li>
 
             </ul>
           </div>
@@ -42,6 +43,7 @@ const Navbar = () => {
             <li><Link to="/competitions">competitions</Link></li>
             <li><Link to="/leaderboard">leaderboard</Link></li>
             <li><Link to="/challenge">challenge</Link></li>
+            <li><Link to="/blog">blog</Link></li>
             
           </ul>
         </div>
