@@ -3,6 +3,7 @@ import { blogList } from '../../config/data';
 import SearchBar from './SearchBar';
 import EmptyList from '../../components/EmptyList/EmptyList';
 import BlogList from './BlogList';
+import './styles.css';
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState('');
