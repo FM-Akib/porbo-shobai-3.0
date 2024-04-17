@@ -89,6 +89,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    
 }
 .icn{
     height: 25px;

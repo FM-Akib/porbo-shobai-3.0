@@ -6,7 +6,23 @@ import l4 from '../../assets/img-4.png';
 import l5 from '../../assets/img-5.png';
 import l6 from '../../assets/img-6.png';
 import { Helmet } from 'react-helmet';
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+import { FaRankingStar } from "react-icons/fa6";
+import { PiStarDuotone } from "react-icons/pi";
+import { BsFilePerson } from "react-icons/bs";
+import { GiRank3 } from "react-icons/gi";
+import { GiWhiteBook } from "react-icons/gi";
+import { BiTask } from "react-icons/bi";
+
+import { BsAward } from "react-icons/bs";
+import { PiCrownFill } from "react-icons/pi";
+import { GiStarMedal } from "react-icons/gi";
+
+import { BsBookmarkStarFill } from "react-icons/bs";
+import { RiShieldStarLine } from "react-icons/ri";
+
+
+
+
 
 const Leaderboard = () => {
     return (
@@ -15,8 +31,8 @@ const Leaderboard = () => {
         <title>Porbo Shobai | Leaderboard</title>
         </Helmet>
         <body className="fullbody">
-    <main className='leadermain'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="  />
+        <main className='leadermain'>
+    {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="  /> */}
 
         
         <div className="leader-title">
@@ -26,22 +42,22 @@ const Leaderboard = () => {
         <section className="leadercontainer">
             <div className="table">
                <div className="rank-title rank">
-               <h2><i className="fa-solid fa-ranking-star" style={{ color: '#f5c000' }} ></i> Rank</h2>
+               <h2 className="flex"><FaRankingStar className="mr-1 text-xl text-[#f5c000]" /> Rank</h2>
                </div>
                <div className="points-title points">
-                <h2><i className="fa-solid fa-star" style={{ color: '#f5c000' }}></i> Points</h2>
+                <h2 className="flex"><PiStarDuotone className="mr-1 text-xl text-[#f5c000]" /> Points</h2>
                </div>
                <div className="name-title name">
-                <h2><i className="fa-solid fa-user" style={{ color: '#df073d' }}></i> Name</h2>
+                <h2 className="flex"><BsFilePerson className="mr-1 text-xl text-[#f5c000]"/> Name</h2>
                </div>
                <div className="badge">
-                <h2><i className="fa-solid fa-trophy" style={{ color: '#f5c000' }}></i> Milestone</h2>
+                <h2 className="flex"><GiRank3 className="mr-1 text-xl text-[#f5c000]" /> Milestone</h2>
                </div>
                <div className="book">
-                <h2><i className="fa-solid fa-book" style={{ color: '#df073d' }}></i> Book Read</h2>
+                <h2 className="flex"><GiWhiteBook  className="mr-1 text-xl text-[#f5c000]" /> Book Read</h2>
                </div>
                <div className="task">
-                <h2><i className="fa-solid fa-list-check" style={{ color: '#059931' }}></i> Total Task</h2>
+                <h2 className="flex"><BiTask className="mr-1 text-xl text-[#f5c000]"/> Total Task</h2>
                </div>
 
                <div className="rank ">
@@ -55,9 +71,9 @@ const Leaderboard = () => {
                 <h2> Nadiya Islam</h2>
                </div>
                <div className="badge">
-                       <div className="icn"><i className="fa-solid fa-award fa-2xl"style={{ color: '#df073d' }}></i></div>
-                       <div className="icn"><i className="fa-solid fa-crown fa-2xl" style={{ color: '#f5c000' }}></i></div>
-                       <div className="icn"><i className="fa-solid fa-medal fa-2xl" style={{ color: '#b30083' }}></i></div>
+                       <div className="icn"><BsAward className="text-2xl text-[#f5c000]" /></div>
+                       <div className="icn"><PiCrownFill className="text-2xl text-[#b30083]"/></div>
+                       <div className="icn"><GiStarMedal className="text-2xl text-[#06933c]"/></div>
                </div>
                <div className="book">
                 <h2> 12</h2>
@@ -79,9 +95,9 @@ const Leaderboard = () => {
                 <h2> Abdur Rahman</h2>
                </div>
                <div className="badge">
-                       <div className="icn"><i className="fa-solid fa-award fa-2xl"  style={{ color: '#a80000' }}></i></div>
-                       <div className="icn"><i className="fa-solid fa-bookmark fa-2xl" style={{ color: ' #06933c' }}></i></div>
-                       <div className="icn"><i className="fa-solid fa-medal fa-2xl" style={{ color: ' #b30083' }} ></i></div>
+                        <div className="icn"><BsAward className="text-2xl text-[#f5c000]" /></div>
+                       <div className="icn"><PiCrownFill className="text-2xl text-[#b30083]"/></div>
+                       <div className="icn"><BsBookmarkStarFill className="text-2xl text-[#06933c]"/></div>
                </div>
                <div className="book">
                 <h2> 15</h2>
@@ -103,9 +119,8 @@ const Leaderboard = () => {
                 <h2> Ishita Das</h2>
                </div>
                <div className="badge">
-                       <div className="icn"><i className="fa-solid fa-award fa-2xl"  style={{ color: '#a80000' }}></i></div>
-                     
-                       <div className="icn"><i className="fa-solid fa-medal fa-2xl"  style={{ color: ' #b30083' }}></i></div>
+                        <div className="icn"><BsAward className="text-2xl text-[#f5c000]" /></div>
+                       <div className="icn"><BsBookmarkStarFill className="text-2xl text-[#06933c]"/></div>
                </div>
                <div className="book">
                 <h2> 09</h2>
@@ -128,7 +143,8 @@ const Leaderboard = () => {
                </div>
                <div className="badge">
                       
-                       <div className="icn"><i className="fa-solid fa-star fa-2xl"  style={{ color: ' #0d8c62' }} ></i></div>
+               <div className="icn"><RiShieldStarLine  className="text-2xl text-[#f5c000]" /></div>
+
                       
                </div>
                <div className="book">
@@ -152,7 +168,7 @@ const Leaderboard = () => {
                 <h2> Rifat Uddin</h2>
                </div>
                <div className="badge">
-                <div className="icn"><i className="fa-solid fa-star fa-2xl" style={{ color: ' #0d8c62' }}></i></div>
+               <div className="icn"><RiShieldStarLine  className="text-2xl text-[#f5c000]" /></div>
                </div>
                <div className="book">
                 <h2> 02</h2>
@@ -175,7 +191,7 @@ const Leaderboard = () => {
                 <h2> Nazim Istiaque</h2>
                </div>
                <div className="badge">
-                <div className="icn"><i className="fa-solid fa-star fa-2xl" style={{ color: ' #0d8c62' }}></i></div>
+               <div className="icn"><RiShieldStarLine  className="text-2xl text-[#f5c000]" /></div>
                </div>
                <div className="book">
                 <h2> 01</h2>

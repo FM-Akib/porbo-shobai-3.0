@@ -46,7 +46,8 @@ import Signup from "../Pages/Signup/Signup";
         },
         {
           path:"challenge",
-          element: <Challenge></Challenge>
+          element: <Challenge></Challenge>,
+          loader:  () =>fetch('quiz.json')
         },
         {
           path:"blog",
