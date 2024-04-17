@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
 
+    const {signInWithGoogle,signInWithEmail} = useContext(AuthContext)
+    const navigate = useNavigate();
 
     const {
         register,
@@ -10,10 +15,40 @@ const Login = () => {
         formState: { errors },
       } = useForm()
 
-      const onSubmit = (data) => console.log(data)
+      const onSubmit = (data) =>{
+        signInWithEmail(data.email, data.password)
+        .then((result) => {
+            const Loggeduser = result.user;
+                console.log(Loggeduser)
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Sign in successful.",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+              navigate('/')
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
+      }
 
       const handleSignInWithGoogle = () =>{
-        console.log('Signing in with Google');
+        signInWithGoogle()
+        .then(result =>{
+            const Loggeduser = result.user;
+            console.log(Loggeduser)
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "Sign in successful.",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              navigate('/')
+        })
+        .then(err=>console.log(err))
       }
 
     return (

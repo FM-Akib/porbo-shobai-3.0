@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Signup = () => {
 
-
+    const {signInWithGoogle,createUserWithEmail} = useContext(AuthContext)
+    const navigate = useNavigate();
     
     const {
         register,
@@ -11,11 +15,48 @@ const Signup = () => {
         formState: { errors },
       } = useForm()
 
-      const onSubmit = (data) => console.log(data)
 
-      const handleSignInWithGoogle = () =>{
-        console.log('Signing in with Google');
+      const handleSignInWithGoogle= ()=>{
+        signInWithGoogle()
+        .then((result) => {
+            const Loggeduser = result.user;
+                console.log(Loggeduser)
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Sign up successful.",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+                  navigate('/')
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
       }
+    
+    const onSubmit = (data) => {
+        createUserWithEmail(data.email,data.password)
+        .then((result) => {
+            const Loggeduser = result.user;
+                console.log(Loggeduser)
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "Sign up successful.",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+                  navigate('/')
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
+    }
+
+      
+
+    
 
     return (
         <div className=" bg-[#D9F3F4] text-gray-900 flex justify-center">
