@@ -14,6 +14,8 @@ import AllBlogs from "../Pages/AllBlogs/AllBlogs";
 import Blog from "../Pages/Blog/Blog";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Signup/Signup";
+import Dashboard from "../Layout/Dashboard";
+import DashHome from "../Pages/Dashboard/DashHome/DashHome";
 
   export const router = createBrowserRouter([
     {
@@ -67,4 +69,14 @@ import Signup from "../Pages/Signup/Signup";
         }
       ]
     },
+    {
+      path:"dashboard",
+      element: <Dashboard></Dashboard>,
+      children:[
+        {
+          path:'main',
+          element: <DashHome></DashHome>
+        }
+      ]
+    }
   ]);
