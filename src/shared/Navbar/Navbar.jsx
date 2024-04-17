@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/log.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-
+import './styles.css';
 
 const Navbar = () => {
 
@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-white rounded-md z-30 fixed top-0 max-w-[1296px] px-5">
+        <div className="navbar bg-white rounded-md z-30 fixed top-0 max-w-[1296px] px-5 NavFont">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -73,12 +73,12 @@ const Navbar = () => {
             </div>
           </div>
       
-              <button onClick={handleLogout} className="inline-flex items-center justify-center rounded-xl bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+              <button onClick={handleLogout} className="inline-flex items-center justify-center rounded-lg bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
               Logout
            </button>
            </>: <>
            
-           <Link to="/login" class="inline-flex items-center justify-center rounded-xl bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+           <Link to="/login" class="inline-flex items-center justify-center rounded-lg bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
           Login
        </Link>
            </>

@@ -31,6 +31,13 @@ const Login = () => {
           })
           .catch((error) => {
             console.log(error.message);
+            Swal.fire({
+                position: "top-center",
+                icon: "error",
+                title: "Email password not matched.",
+                showConfirmButton: false,
+                timer: 1500
+              });
           });
       }
 
