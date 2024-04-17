@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
-
+import { IoIosSchool } from "react-icons/io";
 
 const Dashboard = () => {
     return (
@@ -67,7 +67,8 @@ const Dashboard = () => {
             </ul>
 
             <div className="mt-auto h-16 flex items-center w-full">
-                <img  className="h-8 w-10 mx-auto" src="https://raw.githubusercontent.com/bluebrown/tailwind-zendesk-clone/master/public/assets/chi.png" />
+                {/* <img  className="h-8 w-10 mx-auto" src="https://raw.githubusercontent.com/bluebrown/tailwind-zendesk-clone/master/public/assets/chi.png" /> */}
+            <IoIosSchool className="text-white h-8 w-10 mx-auto" />
             </div>
         </div>
             </div>
