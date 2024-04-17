@@ -2,8 +2,6 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
 import { GoogleAuthProvider } from "firebase/auth";
-import { FallingLines } from "react-loader-spinner";
-// import { render } from "react-dom";
 
 
 const provider = new GoogleAuthProvider();
@@ -17,12 +15,7 @@ const [loading,setLoading] = useState(true);
 
 
 if(loading) {
-    (<FallingLines
-        color="#4fa94d"
-        width="100"
-        visible={true}
-        ariaLabel="falling-circles-loading"
-        />)
+    <div className="rounded-md h-12 w-12 border-4 border-t-4 border-blue-500 animate-spin absolute"></div>
 }
 
 

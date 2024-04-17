@@ -1,8 +1,21 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/log.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+
+
 const Navbar = () => {
+
+  const {user,logOut} =  useContext(AuthContext)
+
+
+  const handleLogout = () => {
+    logOut();
+  }
+
+
     return (
-        <div className="navbar bg-white rounded-md z-30 fixed top-0 max-w-[1296px]">
+        <div className="navbar bg-white rounded-md z-30 fixed top-0 max-w-[1296px] px-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,8 +60,30 @@ const Navbar = () => {
             
           </ul>
         </div>
+
+
+
+
         <div className="navbar-end">
-          <Link to="/login" className="btn btn-outline">Login</Link>
+
+          {
+            user? <>   <div className="btn btn-ghost btn-circle avatar mr-1">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS Navbar component" src="https://i.ibb.co/hg9Pj1n/boy-Avatar.png"/>
+            </div>
+          </div>
+      
+              <button onClick={handleLogout} className="inline-flex items-center justify-center rounded-xl bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+              Logout
+           </button>
+           </>: <>
+           
+           <Link to="/login" class="inline-flex items-center justify-center rounded-xl bg-green-600 py-2 px-5 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+          Login
+       </Link>
+           </>
+          }
+
         </div>
       </div>
     );
