@@ -3,6 +3,9 @@ import { GiSpellBook } from "react-icons/gi";
 import { BiTask } from "react-icons/bi";
 import LineCharts from "../Charts/LineCharts";
 import Timeline from "./Timeline";
+import RadarCharts from "../Charts/RadarCharts";
+import NewsUpdate from "./NewsUpdate";
+import Task from "./Task";
 
 
 
@@ -61,17 +64,33 @@ const DashHome = () => {
             </div>
            </div>
 
+
+           <div className="bg-white p-4 mt-6 mx-8  shadow-sm">
+            <h2 className="text-xl font-semibold">Incompleted | <span className="text-slate-500 text-sm tracking-wider ">task</span> </h2>
+            <div className="pt-12 pb-7">
+            <Task></Task>
+            </div>
+           </div>
+
    </div>
 
 
 
-        <div className="col-span-4  ">
+        <div className="col-span-4 ">
          
          <div className="bg-white rounded">
             <Timeline></Timeline>
          </div>
-        
 
+         <div className="bg-white rounded my-6 ">
+         <h2 className="text-xl pt-5 pl-3 font-semibold">Analysis | <span className="text-slate-500 text-sm tracking-wider ">by marks</span> </h2>
+            <RadarCharts></RadarCharts>
+         </div>
+        
+         <div className="bg-white rounded my-6  ">
+         <h2 className="text-xl pt-5 pl-3 font-semibold">News & Updates | <span className="text-slate-500 text-sm tracking-wider ">today</span> </h2>
+            <NewsUpdate></NewsUpdate>
+         </div>
 
         </div>
         </div>
