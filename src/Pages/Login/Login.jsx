@@ -51,10 +51,10 @@ const Login = () => {
 
                     </div>
 
-                    <div className="my-12 border-b text-center">
+                    <div className="my-12 border-b text-center w-4/5 mx-auto">
                         <div
                             className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
-                            Or sign In with Cartesian E-mail
+                            Or sign In with E-mail
                         </div>
                     </div>
 
