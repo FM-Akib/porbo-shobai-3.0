@@ -1,5 +1,21 @@
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form"
 
 const Login = () => {
+
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm()
+
+      const onSubmit = (data) => console.log(data)
+
+      const handleSignInWithGoogle = () =>{
+        console.log('Signing in with Google');
+      }
+
     return (
        
 <div className=" bg-[#D9F3F4] text-gray-900 flex justify-center">
@@ -9,7 +25,8 @@ const Login = () => {
             <div className="mt-2 flex flex-col items-center">
                 <div className="w-full flex-1 mt-8">
                     <div className="flex flex-col items-center">
-                        <button
+
+                        <button onClick={handleSignInWithGoogle}
                             className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-green-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                             <div className="bg-white p-2 rounded-full">
                                 <svg className="w-4" viewBox="0 0 533.5 544.3">
@@ -42,14 +59,20 @@ const Login = () => {
                     </div>
 
                     <div className="mx-auto max-w-xs">
-                        <input
-                            className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <input {...register("email", { required: true })}  className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                             type="email" placeholder="Email" />
-                        <input
-                            className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+                        {errors.email && <span className="text-red-500 mt-1 ml-1">Email is required!!</span>}
+
+
+
+                        <input {...register("password", { required: true })}  className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                             type="password" placeholder="Password" />
-                        <button
-                            className="mt-5 tracking-wide font-semibold bg-green-400 text-white-500 w-full py-4 rounded-lg hover:text-white hover:bg-green-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                        {errors.password && <span className="text-red-500  mt-1 ml-1">Password is required!!</span>}
+                        
+                       
+                        <button type="submit" className="mt-5 tracking-wide font-semibold bg-green-400 text-white-500 w-full py-4 rounded-lg hover:text-white hover:bg-green-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                             <svg className="w-6 h-6 -ml-2" fill="none" stroke="currentColor" 
                                 >
                                 <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
@@ -60,15 +83,15 @@ const Login = () => {
                                 Sign In
                             </span>
                         </button>
+                        </form>
+
+
                         <p className="mt-6 text-xs text-gray-600 text-center">
-                            I agree to abide by Cartesian Kinetics
-                            <a href="#" className="border-b border-gray-500 border-dotted">
-                                Terms of Service
-                            </a>
-                            and its
-                            <a href="#" className="border-b border-gray-500 border-dotted">
-                                Privacy Policy
-                            </a>
+                            Do not have any account? Please
+                             
+                            <Link to="/signup" className="border-b text-blue-600  ml-1 border-gray-500 border-dotted">
+                                sign up
+                            </Link>
                         </p>
                     </div>
                 </div>
