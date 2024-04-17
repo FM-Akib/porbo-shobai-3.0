@@ -6,6 +6,7 @@ import Timeline from "./Timeline";
 import RadarCharts from "../Charts/RadarCharts";
 import NewsUpdate from "./NewsUpdate";
 import Task from "./Task";
+import Projects from "./Projects";
 
 
 
@@ -69,6 +70,14 @@ const DashHome = () => {
             <h2 className="text-xl font-semibold">Incompleted | <span className="text-slate-500 text-sm tracking-wider ">task</span> </h2>
             <div className="pt-12 pb-7">
             <Task></Task>
+            </div>
+           </div>
+
+
+           <div className="bg-white p-4 mt-6 mx-8  shadow-sm">
+            <h2 className="text-xl font-semibold">My Projects | <span className="text-slate-500 text-sm tracking-wider ">go youtube</span> </h2>
+            <div className="px-5 pb-2">
+            <Projects></Projects>
             </div>
            </div>
 
