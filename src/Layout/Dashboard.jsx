@@ -73,8 +73,8 @@ const Dashboard = () => {
             </div>
 
 
-            
-            <div className="col-span-11 p-4">
+
+            <div className="col-span-11  p-4">
                 <Outlet></Outlet>
             </div>
         </div>

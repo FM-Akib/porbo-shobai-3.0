@@ -1,6 +1,8 @@
 import { MdStars } from "react-icons/md";
 import { GiSpellBook } from "react-icons/gi";
 import { BiTask } from "react-icons/bi";
+import LineCharts from "../Charts/LineCharts";
+import Timeline from "./Timeline";
 
 
 
@@ -52,13 +54,25 @@ const DashHome = () => {
             </a>
             </div>
 
+           <div className="bg-white p-4 mt-6 mx-8  shadow-sm">
+            <h2 className="text-xl font-semibold">Task | <span className="text-slate-500 text-sm tracking-wider ">Reports</span> </h2>
+            <div className="pt-12">
+            <LineCharts></LineCharts>
+            </div>
+           </div>
 
    </div>
 
 
 
-        <div className="col-span-4 bg-green-600 p-2">
-asdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf
+        <div className="col-span-4  ">
+         
+         <div className="bg-white rounded">
+            <Timeline></Timeline>
+         </div>
+        
+
+
         </div>
         </div>
     );
