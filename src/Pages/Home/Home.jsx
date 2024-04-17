@@ -19,6 +19,7 @@ import b2 from '../../assets/blog-2.png'
 import b3 from '../../assets/blog-3.png'
 import b4 from '../../assets/blog-4.png'
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -37,8 +38,8 @@ const Home = () => {
 <div className="event-message">
    <input type="text"/>
    <button type="button" className="button-a event-visit-btn">Message</button>
-   <button type="button" role="button" className="button-a event-visit-btn">Sign up</button> 
-   <button type="button" role="button" className="button-a event-visit-btn">Login</button> 
+<Link to="/signup"><button type="button" role="button" className="button-a event-visit-btn">Sign up</button></Link>    
+<Link to="/login">  <button type="button" role="button" className="button-a event-visit-btn">Login</button> </Link>    
 </div>
 
     <section className="homemain">
@@ -48,21 +49,21 @@ const Home = () => {
             <div className="main-event-img">
                 <img src={m1} alt="img"/>
             </div>
-            <button className="home-view">Perticipate</button>
+            <Link to="/competitions"> <button className="home-view">Perticipate</button></Link> 
             </div>
             <div className="home-content">
                 <div className="main-event-img">
                 <img src={m2} alt="img"/>
 
                 </div>
-                <button className="home-view">View</button>
+               <Link to="/leaderboard"><button className="home-view">View</button></Link> 
                 </div>
                 <div className="home-content">
                     <div className="main-event-img">
                     <img src={m3} alt="img"/>
 
                     </div>
-                    <button className="home-view">Challenge</button>
+                    <Link to="/challenge">  <button className="home-view">Challenge</button></Link>
                     </div>
                      
          
