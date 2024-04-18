@@ -12,7 +12,7 @@ import Projects from "./Projects";
 
 const DashHome = () => {
     return (
-        <div className="grid grid-cols-11 ">
+        <div className="grid grid-cols-11 font-inter">
 
             <div className="col-span-7  p-2">
 
@@ -96,7 +96,7 @@ const DashHome = () => {
             <RadarCharts></RadarCharts>
          </div>
         
-         <div className="bg-white rounded my-6  ">
+         <div className="bg-white rounded my-6 font-inter">
          <h2 className="text-xl pt-5 pl-3 font-semibold">News & Updates | <span className="text-slate-500 text-sm tracking-wider ">today</span> </h2>
             <NewsUpdate></NewsUpdate>
          </div>

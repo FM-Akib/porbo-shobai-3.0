@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'font-inter': [ 'Inter', 'sans-serif'],
+      
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
