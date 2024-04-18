@@ -12,7 +12,7 @@ import Projects from "./Projects";
 
 const DashHome = () => {
     return (
-        <div className="grid grid-cols-11">
+        <div className="grid grid-cols-11 ">
 
             <div className="col-span-7  p-2">
 
