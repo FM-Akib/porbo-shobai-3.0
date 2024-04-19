@@ -16,6 +16,7 @@ import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Signup/Signup";
 import Dashboard from "../Layout/Dashboard";
 import DashHome from "../Pages/Dashboard/DashHome/DashHome";
+import Rewards from "../Pages/Rewards/Rewards";
 
   export const router = createBrowserRouter([
     {
@@ -58,6 +59,11 @@ import DashHome from "../Pages/Dashboard/DashHome/DashHome";
         {
           path:"blog/:id",
           element: <Blog></Blog>
+        },
+        {
+          path:"/rewards",
+          element: <Rewards></Rewards>,
+          loader: () =>  fetch('../fictionBooks.json')
         },
         {
           path:"login",

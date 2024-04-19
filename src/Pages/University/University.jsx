@@ -78,7 +78,7 @@ const University = () => {
           
         </div>
 
-        <div className="university">
+        {/* <div className="university">
             <div className="university-img">
             <img src={u4} alt="university Image" />
               </div>
@@ -95,7 +95,7 @@ const University = () => {
             </div>
             </div>
             
-        </div>
+        </div> */}
 
     </section>
 

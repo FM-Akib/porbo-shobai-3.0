@@ -1,0 +1,220 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/h1s1DBc/B1-removebg-preview.png",
+      "authorImage": "https://i.ibb.co/pZQT9Pf/ben-den-engelsen-YUu9-UAc-OKZ4-unsplash.jpg",
+      "review": "A timeless classic that tackles important social issues with grace and depth.",
+      "totalPages": 281,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Legal Drama", "Southern Gothic"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960,
+      "price": 800
+    },
+    {
+      "id": 2,
+      "name": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/6WmTmN4/b2-removebg-preview.png",
+      "authorImage": "https://i.ibb.co/R2JKfqx/foto-sushi-6anudmp-ILw4-unsplash.jpg",
+      "review": "A chilling portrayal of a dystopian society, serving as a stark warning against totalitarianism.",
+      "totalPages": 328,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political Fiction"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949,
+      "price": 850
+    },
+    {
+      "id": 3,
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/C8wCW8k/b3-removebg-preview.png",
+      "authorImage": "https://i.ibb.co/qnxrTGy/leio-mclaren-L2d-Tmh-Qzx4-Q-unsplash.jpg",
+      "review": "A compelling exploration of the American Dream and its disillusionment.",
+      "totalPages": 180,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925,
+      "price": 750
+    },
+    {
+      "id": 4,
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/CB557c9/b4-removebg.png",
+      "authorImage": "https://i.ibb.co/m61rcFd/luis-villasmil-hh3-Vi-D0r0-Rc-unsplash.jpg",
+      "review": "A raw and honest portrayal of teenage angst and alienation.",
+      "totalPages": 224,
+      "rating": 4.4,
+      "category": "Fiction",
+      "tags": ["Coming-of-age", "Bildungsroman"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951,
+      "price": 780
+    },
+    {
+      "id": 5,
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/PrGWC8H/b5-removebg-preview.png",
+      "authorImage": "https://i.ibb.co/HXjW76z/luis-villasmil-Z4rqv-Rp-Rj38-unsplash.jpg",
+      "review": "A delightful romance with sharp social commentary, showcasing Austen's wit and insight.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813,
+      "price": 780
+    },
+    {
+      "id": 6,
+      "name": "Harry Potter",
+      "author": "J.K. Rowling",
+      "image": "https://i.ibb.co/MCZf6hf/b6-removebg-preview.png",
+      "authorImage": "https://i.ibb.co/M1hfnFd/sarah-brown-t-Td-C88-6a-I-unsplash.jpg",
+      "review": "A captivating tale of magic, friendship, and adventure that appeals to readers of all ages.",
+      "totalPages": 309,
+      "rating": 4.9,
+      "category": "Fiction",
+      "tags": ["Magic", "Children's Literature"],
+      "publisher": "Bloomsbury Publishing",
+      "yearOfPublishing": 1997,
+      "price": 850
+    }
+  ],
+  "backpacks": [
+    {
+      "id": 7,
+      "name": "Classic School Backpack",
+      "type": "School Bag",
+      "brand": "ABC Backpacks",
+      "color": "Blue",
+      "material": "Polyester",
+      "capacity_liters": 20,
+      "price": 1200,
+      "image_url": "https://i.ibb.co/XVZCxy5/sc-4-removebg-preview.png"
+    },
+    {
+      "id": 8,
+      "name": "Outdoor Adventure Backpack",
+      "type": "Hike Bag",
+      "brand": "XYZ Outdoors",
+      "color": "Black",
+      "material": "Nylon",
+      "capacity_liters": 30,
+      "price": 2500,
+      "image_url": "https://i.ibb.co/QkkPrk3/h1-removebg-preview.png"
+
+
+    },
+    {
+      "id": 9,
+      "name": "Modern School Backpack",
+      "type": "School Bag",
+      "brand": "DEF Gear",
+      "color": "Red",
+      "material": "Canvas",
+      "capacity_liters": 18,
+      "price": 1000,
+      "image_url": "https://i.ibb.co/WK5grDT/sc-1-removebg-preview.png"
+    },
+    {
+      "id": 10,
+      "name": "Explorer Hiking Backpack",
+      "type": "Hike Bag",
+      "brand": "Adventure Plus",
+      "color": "Green",
+      "material": "Polyester",
+      "capacity_liters": 35,
+      "price": 3000,
+      "image_url": "https://i.ibb.co/1ZWtMDZ/h2-removebg-preview.png"
+    },
+    {
+      "id": 11,
+      "name": "Classic Canvas School Bag",
+      "type": "School Bag",
+      "brand": "School Supplies Co.",
+      "color": "Pink",
+      "material": "Canvas",
+      "capacity_liters": 15,
+      "price": 900,
+      "image_url": "https://i.ibb.co/yFNW9Yd/sc-2-removebg-preview.png"
+    },
+    {
+      "id": 12,
+      "name": "Explorer Trekking Backpack",
+      "type": "Hike Bag",
+      "brand": "Outdoor Essentials",
+      "color": "Grey",
+      "material": "Polyester",
+      "capacity_liters": 40,
+      "price": 3500,
+      "image_url": "https://i.ibb.co/bbjzKKz/h3-removebg-preview.png"
+    }
+  ],
+  "geometry_box": [
+    {
+      "id": 13,
+      "name": "Geometry Box 1",
+      "type": "Math Set",
+      "brand": "ABC Supplies",
+      "color": "Blue",
+      "price": 150,
+      "image_url": "https://i.ibb.co/Ky7gV1T/pngwing-com.png"
+    },
+    {
+      "id": 14,
+      "name": "Geometry Box 2",
+      "type": "Math Set",
+      "brand": "XYZ Products",
+      "color": "Green",
+      "price": 180,
+      "image_url": "https://i.ibb.co/YNt4cKQ/g-2-removebg-preview.png"
+    },
+    {
+      "id": 15,
+      "name": "Geometry Box 3",
+      "type": "Math Set",
+      "brand": "DEF Tools",
+      "color": "Red",
+      "price": 200,
+      "image_url": "https://i.ibb.co/X2D8q5Z/g-3-removebg-preview.png"
+    },
+    {
+      "id": 16,
+      "name": "Geometry Box 4",
+      "type": "Math Set",
+      "brand": "GHI Instruments",
+      "color": "Yellow",
+      "price": 170,
+      "image_url": "https://i.ibb.co/802wpKD/g-4-removebg-preview.png"
+    },
+    {
+      "id": 17,
+      "name": "Geometry Box 5",
+      "type": "Math Set",
+      "brand": "JKL Equipments",
+      "color": "Purple",
+      "price": 190,
+      "image_url": "https://i.ibb.co/fvd0LkX/g-6-removebg-preview.png"
+    },
+    {
+      "id": 18,
+      "name": "Geometry Box 6",
+      "type": "Math Set",
+      "brand": "MNO Solutions",
+      "color": "Orange",
+      "price": 160,
+      "image_url": "https://i.ibb.co/KzyhbdZ/Nice-Png-clorox-bleach-png-395286.png"
+    }
+  ]
+}

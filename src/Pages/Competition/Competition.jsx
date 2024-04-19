@@ -23,7 +23,7 @@ const Competition = () => {
        
 
 
-        <div className="event">
+        {/* <div className="event">
             <div className="event-img">
                 <img src={e1} alt="Competition"/>
             </div>
@@ -37,7 +37,7 @@ const Competition = () => {
               <p>২৩শে ডিসেম্বর, ২০২৩</p>
               <a href="https://iscm.edu.bd/" target="_blank"><button className="event-visit-btn" role="button">View</button></a>
             </div>
-        </div>
+        </div> */}
         <div className="event">
             <div className="event-img">
                 <img src={e2} alt="Competition"/>

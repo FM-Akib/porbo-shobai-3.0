@@ -139,7 +139,7 @@ const NewsUpdate = () => {
         </div>
       </div>
     </div>
-    <div className="relative border border-gray-200 rounded-lg shadow-lg">
+    {/* <div className="relative border border-gray-200 rounded-lg shadow-lg">
       <button onClick='return this.parentNode.remove()'
         className="absolute p-1 bg-gray-100 border border-gray-300 rounded-full -top-1 -right-1"
       >
@@ -171,7 +171,7 @@ const NewsUpdate = () => {
           </p>
         </div>
       </div>
-    </div>
+    </div> */}
 
 
 </div> 

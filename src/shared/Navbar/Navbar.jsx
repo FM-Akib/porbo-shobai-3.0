@@ -35,7 +35,7 @@ const Navbar = () => {
             <li><Link to="/leaderboard">leaderboard</Link></li>
             <li><Link to="/challenge">challenge</Link></li>
             <li><Link to="/blog">blog</Link></li>
-
+            <li><Link to="/rewards">rewards</Link></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl"> <img className="h-full" src={logo} alt="" /> </a>
@@ -57,6 +57,8 @@ const Navbar = () => {
             <li><Link to="/leaderboard">leaderboard</Link></li>
             <li><Link to="/challenge">challenge</Link></li>
             <li><Link to="/blog">blog</Link></li>
+            <li><Link to="/rewards">rewards</Link></li>
+
             
           </ul>
         </div>
